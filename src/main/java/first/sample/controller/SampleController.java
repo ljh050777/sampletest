@@ -20,7 +20,7 @@ public class SampleController {
     @Resource(name="sampleService")
     private SampleService sampleService;
      
-    @RequestMapping(value="/sample/openSampleBoardList.do")
+    @RequestMapping(value="/sample/openSampleBoardList")
     public ModelAndView openSampleBoardList(Map<String,Object> commandMap) throws Exception{    	
         ModelAndView mv = new ModelAndView("/sample/boardList");
          
