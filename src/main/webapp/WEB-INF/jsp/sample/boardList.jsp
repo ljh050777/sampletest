@@ -7,7 +7,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 </head>
 <body>
-<h2>게시판 목록</h2>
+<h2>db테스트</h2>
 <table style="border:1px solid #ccc">
     <colgroup>
         <col width="10%"/>
