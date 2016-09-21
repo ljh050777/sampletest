@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1> index.jsp TEST[1] </h1>
-	<ul>
-		<li><a href="paas.jsp">Á¶È¸</a></li>
-	</ul>
+	<h1> paas.jsp TEST[1] </h1>
 </body>
 </html>
