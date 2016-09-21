@@ -38,6 +38,13 @@ public class SampleController {
         return mv;
     }
     
+    @RequestMapping(value="/sample/test")
+    public ModelAndView openBoardWrite(Map<String,Object> commandMap) throws Exception{
+        ModelAndView mv = new ModelAndView("/sample/test");
+         
+        return mv;
+    }
+    
     
 
 }
