@@ -8,8 +8,5 @@
 </head>
 <body>
 	<h1> index.jsp TEST[1] </h1>
-	<ul>
-		<li><a href="paas.jsp">Á¶È¸</a></li>
-	</ul>
 </body>
 </html>
