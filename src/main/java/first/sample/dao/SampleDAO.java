@@ -14,4 +14,27 @@ public class SampleDAO extends AbstractDAO{
         return (List<Map<String, Object>>)selectList("sample.selectBoardList", map);
     
 	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Map<String, Object>> selectMainList(Map<String, Object> map) throws Exception{
+        return (List<Map<String, Object>>)selectList("sample.selectBoardList", map);
+    
+	}
+	
+	public void insertList(Map<String, Object> map) throws Exception{
+	    insert("sample.insertList", map);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public Map<String, Object> selectListDetail(Map<String, Object> map) throws Exception{
+	    return (Map<String, Object>) selectOne("sample.selectListDetail", map);
+	}
+	
+	public void updateList(Map<String, Object> map) throws Exception{
+	    update("sample.updateList", map);
+	}
+	
+	public void deleteList(Map<String, Object> map) throws Exception{
+	    update("sample.deleteList", map);
+	}
 }	

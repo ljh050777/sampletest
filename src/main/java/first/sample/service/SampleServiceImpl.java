@@ -22,5 +22,31 @@ public class SampleServiceImpl implements SampleService {
     public List<Map<String, Object>> selectBoardList(Map<String, Object> map) throws Exception {
         return sampleDAO.selectBoardList(map);
     }
+    
+    @Override
+    public List<Map<String, Object>> selectMainList(Map<String, Object> map) throws Exception {
+        return sampleDAO.selectMainList(map);
+    }
+    
+    @Override
+    public void insertList(Map<String, Object> map) throws Exception {
+        sampleDAO.insertList(map);
+    }
+    
+    @Override
+    public Map<String, Object> selectListDetail(Map<String, Object> map) throws Exception {        
+        Map<String, Object> resultMap = sampleDAO.selectListDetail(map);
+        return resultMap;
+    }
+    
+    @Override
+    public void updateList(Map<String, Object> map) throws Exception{
+        sampleDAO.updateList(map);
+    }
+    
+    @Override
+    public void deleteList(Map<String, Object> map) throws Exception {
+        sampleDAO.deleteList(map);
+    }
 
 }

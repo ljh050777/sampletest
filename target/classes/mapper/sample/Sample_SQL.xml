@@ -13,5 +13,59 @@
                 contact            
         ]]>
     	</select>
+    	
+    	<insert id="insertList" parameterType="hashmap">
+	    <![CDATA[
+	        INSERT INTO contact
+	        (
+	            name,
+	            email, 
+	            message, 
+	            pid
+	        )
+	        VALUES
+	        (             
+	            #{NAME}, 
+	            #{EMAIL},
+	            #{MESSAGE},
+	            #{PID}
+	        )
+		    ]]>
+		</insert>
+		
+		<select id="selectListDetail" parameterType="hashmap" resultType="hashmap">
+		    <![CDATA[
+		        SELECT
+		            name,
+		            email, 
+		            message, 
+		            pid
+		        FROM
+		            contact
+		        WHERE
+		            pid = #{PID}        
+		    ]]>
+		</select>
+		
+		<update id="updateList" parameterType="hashmap">
+		    <![CDATA[
+		        UPDATE contact 
+		        SET
+		            name = #{NAME},
+		            email = #{EMAIL},
+		            message = #{MESSAGE}
+		        WHERE
+		            pid = #{PID}    
+		    ]]>
+		</update>
+		
+		<delete id="deleteList" parameterType="hashmap">
+		    <![CDATA[
+		        DELETE 
+		        FROM contact	        
+		        WHERE
+		            pid = #{PID}
+		    ]]>
+		</delete>
      
 </mapper>
