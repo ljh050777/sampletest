@@ -12,7 +12,6 @@ public class SampleDAO extends AbstractDAO{
 	
 	@SuppressWarnings("unchecked")
 	public List<Map<String, Object>> selectMainList(Map<String, Object> map) throws Exception{
-		log.debug("sampleDAO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         return (List<Map<String, Object>>)selectList("sample.selectMainList", map);
     
 	}
