@@ -15,22 +15,30 @@
             </colgroup>
             <caption>사용자 등록</caption>
             <tbody>
-                <tr>
-                    <th scope="row">이름</th>
-                    <td><input type="text" id="NAME" name="NAME" class="wdp_90"></input></td>
+            	<tr>
+                    <th scope="row">등록번호</th>
+                    <td><input type="text" id="PID" name="PID" class="wdp_90"></input></td>
                 </tr>
                 <tr>
-                    <th scope="row">이메일</th>
-                    <td><input type="text" id="EMAIL" name="EMAIL" class="wdp_90"></input></td>
+                    <th scope="row">이름</th>
+                    <td><input type="text" id="HNGNM" name="HNGNM" class="wdp_90"></input></td>
+                </tr>
+                <tr>
+                    <th scope="row">성별</th>
+                    <td><input type="text" id="MF" name="MF" class="wdp_90"></input></td>
+                </tr>
+                <tr>
+                    <th scope="row">생년월일</th>
+                    <td><input type="text" id="BRTHDD" name="BRTHDD" class="wdp_90"></input></td>
+                </tr>
+                <tr>
+                    <th scope="row">주소</th>
+                    <td><input type="text" id="ZIPCDADDR" name="ZIPCDADDR" class="wdp_90"></input></td>
                 </tr>
                 <tr>
                     <th scope="row">메세지</th>
                     <td><input type="text" id="MESSAGE" name="MESSAGE" class="wdp_90"></input></td>
-                </tr>
-                <tr>
-                    <th scope="row">등록번호</th>
-                    <td><input type="text" id="PID" name="PID" class="wdp_90"></input></td>
-                </tr>                                
+                </tr>                                                
             </tbody>
         </table>
          

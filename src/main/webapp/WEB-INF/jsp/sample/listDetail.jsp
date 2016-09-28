@@ -9,28 +9,34 @@
 <body>
     <table class="board_view">
         <colgroup>
-            <col width="25%"/>
-            <col width="25%"/>
-            <col width="25%"/>
-            <col width="25%"/>
+            <col width="30%"/>
+            <col width="70%"/>
         </colgroup>
         <caption>사용자 상세</caption>
         <tbody>
             <tr>
-                <th scope="row">이름</th>
-                <td>${map.name}</td>
+                <th scope="row">등록번호</th>
+                <td>${map.pid}</td>
             </tr>
             <tr>
-                <th scope="row">이메일</th>
-                <td>${map.email}</td>
+                <th scope="row">이름</th>
+                <td>${map.hngnm}</td>
+            </tr>
+            <tr>
+                <th scope="row">성별</th>
+                <td>${map.mf}</td>
+            </tr>
+            <tr>
+                <th scope="row">생년월일</th>
+                <td>${map.brthdd}</td>
+            </tr>
+            <tr>
+                <th scope="row">주소</th>
+                <td>${map.zipcdaddr}</td>
             </tr>
             <tr>
                 <th scope="row">메세지</th>
                 <td>${map.message}</td>
-            </tr>
-            <tr>
-                <th scope="row">등록번호</th>
-                <td>${map.pid}</td>
             </tr>
         </tbody>
     </table>

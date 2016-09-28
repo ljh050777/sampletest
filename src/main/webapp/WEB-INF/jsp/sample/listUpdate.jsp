@@ -18,15 +18,34 @@
             <caption>게시글 상세</caption>
             <tbody>
             <tr>
-                <th scope="row">이름</th>
+                <th scope="row">등록번호</th>
                 <td>
-                	<input type="text" id="NAME" name="NAME" class="wdp_90" value="${map.name }"/>
+                	${map.pid }
+                	<input type="hidden" id="PID" name="PID" class="wdp_90" value="${map.pid }"/>
                 </td>
             </tr>
             <tr>
-                <th scope="row">이메일</th>
+                <th scope="row">이름</th>
                 <td>
-                	<input type="text" id="EMAIL" name="EMAIL" class="wdp_90" value="${map.email }"/>
+                	<input type="text" id="HNGNM" name="HNGNM" class="wdp_90" value="${map.hngnm }"/>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">성별</th>
+                <td>
+                	<input type="text" id="MF" name="MF" class="wdp_90" value="${map.mf }"/>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">생년월일</th>
+                <td>
+                	<input type="text" id="BRTHDD" name="BRTHDD" class="wdp_90" value="${map.brthdd }"/>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">주소</th>
+                <td>
+                	<input type="text" id="ZIPCDADDR" name="ZIPCDADDR" class="wdp_90" value="${map.zipcdaddr }"/>
                 </td>
             </tr>
             <tr>
@@ -35,13 +54,7 @@
                 	<input type="text" id="MESSAGE" name="MESSAGE" class="wdp_90" value="${map.message }"/>
                 </td>
             </tr>
-            <tr>
-                <th scope="row">등록번호</th>
-                <td>
-                	${map.pid }
-                	<input type="hidden" id="PID" name="PID" class="wdp_90" value="${map.pid }"/>
-                </td>
-            </tr>
+            
         </tbody>
         </table>
     </form>

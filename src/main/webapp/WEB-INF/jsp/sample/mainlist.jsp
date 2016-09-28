@@ -10,16 +10,20 @@
 <h2>사용자 목록</h2>
 <table style="border:1px solid #ccc">
     <colgroup>
-        <col width="25%"/>
-        <col width="25%"/>
-        <col width="25%"/>
-        <col width="25%"/>
+        <col width="15%"/>
+        <col width="15%"/>
+        <col width="10%"/>
+        <col width="10%"/>
+        <col width="30%"/>
+        <col width="20%"/>
     </colgroup>
     <thead>
         <tr>
         	<th scope="col">등록번호</th>
             <th scope="col">이름</th>
-            <th scope="col">이메일</th>
+            <th scope="col">성별</th>
+            <th scope="col">생년월일</th>
+            <th scope="col">주소</th>
             <th scope="col">메세지</th>            
         </tr>
     </thead>
@@ -28,12 +32,14 @@
             <c:when test="${fn:length(list) > 0}">
                 <c:forEach items="${list }" var="row">
                     <tr>                        
-                        <td class="title">
+                        <td class="title" align="center">
                                 <a href="#this" name="title">${row.pid }</a>
                                 <input type="hidden" id="PID" value="${row.pid }">
                         </td>
-                        <td>${row.name }</td>
-                        <td>${row.email }</td>
+                        <td align="center">${row.hngnm }</td>
+                        <td align="center">${row.mf }</td>
+                        <td align="center">${row.brthdd }</td>
+                        <td>${row.zipcdaddr }</td>
                         <td>${row.message }</td>                        
                     </tr>
                 </c:forEach>

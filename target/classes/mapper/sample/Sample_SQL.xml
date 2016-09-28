@@ -5,30 +5,36 @@
      <select id="selectMainList" parameterType="hashmap" resultType="hashmap">
         <![CDATA[
             SELECT
-                name,
-                email,
-                message,
-                pid
+                pid,
+                hngnm,
+                mf,
+                brthdd,
+                zipcdaddr,
+                message
             FROM
-                contact            
+                patinfo            
         ]]>
     	</select>
     	
     	<insert id="insertList" parameterType="hashmap">
 	    <![CDATA[
-	        INSERT INTO contact
+	        INSERT INTO patinfo
 	        (
-	            name,
-	            email, 
-	            message, 
-	            pid
+	            pid,
+                hngnm,
+                mf,
+                brthdd,
+                zipcdaddr,
+                message
 	        )
 	        VALUES
 	        (             
-	            #{NAME}, 
-	            #{EMAIL},
-	            #{MESSAGE},
-	            #{PID}
+	            #{PID}, 
+	            #{HNGNM},
+	            #{MF},
+	            #{BRTHDD},
+	            #{ZIPCDADDR},
+	            #{MESSAGE}
 	        )
 		    ]]>
 		</insert>
@@ -36,12 +42,14 @@
 		<select id="selectListDetail" parameterType="hashmap" resultType="hashmap">
 		    <![CDATA[
 		        SELECT
-		            name,
-		            email, 
-		            message, 
-		            pid
+		            pid,
+	                hngnm,
+	                mf,
+	                brthdd,
+	                zipcdaddr,
+	                message
 		        FROM
-		            contact
+		            patinfo
 		        WHERE
 		            pid = #{PID}        
 		    ]]>
@@ -49,10 +57,12 @@
 		
 		<update id="updateList" parameterType="hashmap">
 		    <![CDATA[
-		        UPDATE contact 
+		        UPDATE patinfo 
 		        SET
-		            name = #{NAME},
-		            email = #{EMAIL},
+		            hngnm = #{HNGNM},
+		            mf = #{MF},
+		            brthdd = #{BRTHDD},
+		            zipcdaddr = #{ZIPCDADDR},
 		            message = #{MESSAGE}
 		        WHERE
 		            pid = #{PID}    
@@ -62,7 +72,7 @@
 		<delete id="deleteList" parameterType="hashmap">
 		    <![CDATA[
 		        DELETE 
-		        FROM contact	        
+		        FROM patinfo	        
 		        WHERE
 		            pid = #{PID}
 		    ]]>
