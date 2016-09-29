@@ -15,7 +15,7 @@
                 <col width="15%"/>
                 <col width="35%"/>
             </colgroup>
-            <caption>게시글 상세</caption>
+            <caption>사용자 상세</caption>
             <tbody>
             <tr>
                 <th scope="row">등록번호</th>
